@@ -6,7 +6,7 @@ import morgan from 'morgan'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import dotenv from 'dotenv'
-import { router } from '../routes/index.js'
+import { router } from '../index.js'
 
 import prepareDatabaseConnection from '../database/connection/connection.js'
 
