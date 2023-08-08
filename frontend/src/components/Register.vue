@@ -6,8 +6,8 @@ export default {
     name:'Register',
     data() {
         return{
-            msg: 'Hello world'
+            title:'Register'
         }
-    },
+    }
 }
 </script>

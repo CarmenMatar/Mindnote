@@ -4,8 +4,10 @@
 <script>
 export default {
     name:'Login',
-    setup() {
-        
-    },
+    data() {
+        return{
+            title: 'Login'
+        }
+    }
 }
 </script>
