@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import index from '@/General/Views/index'
 import MainDashboard from '@/General/Views/MainDashboard'
 import CommunityDashboard from '@/General/Views/CommunityDashboard'
+import AdminDashboard from '@/General/Views/AdminDashboard'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/communityDash',
       name: 'Community Dashboard',
       component: CommunityDashboard
+    },
+    {
+      path: '/adminDash',
+      name: 'Admin Dashboard',
+      component: AdminDashboard
     }
   ]
 })
