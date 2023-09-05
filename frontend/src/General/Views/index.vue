@@ -20,68 +20,35 @@
     <h2>Welcome to Mindnote !</h2><br>
     <p class="h5">Your personal notebook for your thoughts, and a chance to relate with others on specific ideas.</p>
   </div>
-  <div class="container-fluid p-5">
-    <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-    <b-row no-gutters>
-      <b-col md="6">
-        <b-card-img src="https://picsum.photos/400/400/?image=20" alt="Image" class="rounded-0"></b-card-img>
-      </b-col>
-      <b-col md="6">
-        <b-card-body title="Horizontal Card">
-          <b-card-text>
-            This is a wider card with supporting text as a natural lead-in to additional content.
-            This content is a little bit longer.
-          </b-card-text>
-        </b-card-body>
-      </b-col>
-    </b-row>
-  </b-card>
-  </div>
-  <div class="container-fluid text-center mt-5">
-    <h4>Users Daily Posts</h4><br>
-  </div>
-  <div class="container-fluid p-5">
-    <b-card no-body class="overflow-hidden" style="max-width: 540px;">
-    <b-row no-gutters>
-      <b-col md="6">
-        <b-card-img src="https://picsum.photos/400/400/?image=20" alt="Image" class="rounded-0"></b-card-img>
-      </b-col>
-      <b-col md="6">
-        <b-card-body title="Horizontal Card">
-          <b-card-text>
-            This is a wider card with supporting text as a natural lead-in to additional content.
-            This content is a little bit longer.
-          </b-card-text>
-        </b-card-body>
-      </b-col>
-    </b-row>
-  </b-card>
-  </div>
   <div>
-    <b-overlay>
-      <LoginVue v-if="userlogin"></LoginVue>
-    </b-overlay>
+    <LoginVue v-if="userlogin"></LoginVue>
+    <RegisterVue v-if="userregister"></RegisterVue>
   </div>
   </div>
 </template>
 <script>
 import LoginVue from '../components/Login.vue'
+import RegisterVue from '../components/Register.vue'
 export default {
   name: 'index',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      userlogin: false
+      userlogin: false,
+      userregister: false
     }
   },
   components: {
-    LoginVue
+    LoginVue,
+    RegisterVue
   },
   methods: {
     open_login () {
       this.userlogin = true
+      this.userregister = false
     },
     open_register () {
+      this.userregister = true
       this.userlogin = false
     }
   }
