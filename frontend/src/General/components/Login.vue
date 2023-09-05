@@ -8,7 +8,7 @@
                 <div class="card-heading text-primary">User Login</div>
               </div>
               <div class="card-body p-lg-5">
-                <h3 class="mb-4">Hi, welcome back! ??</h3>
+                <h3 class="mb-4">Hi, welcome back!</h3>
                 <form id="loginForm" action="index.html">
                   <div class="form-floating mb-3">
                     <input class="form-control" id="floatingInput" type="email" placeholder="name@example.com" required>
