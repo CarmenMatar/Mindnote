@@ -7,15 +7,51 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="collapse navbar-collapse justify-content-end" align="end">
         <b-nav-item>
-          <b-button size="sm" class="my-2 my-sm-0" variant="light" type="submit" @click="open_login">Personal Dashboard</b-button>
+          <b-button size="sm" class="my-2 my-sm-0" variant="light" type="submit">Personal Dashboard</b-button>
         </b-nav-item>
         <b-nav-item>
-          <b-button size="sm" class="my-2 my-sm-0" variant="outline-dark" type="submit" @click="open_register">Community Dashboard</b-button>
+          <b-button size="sm" class="my-2 my-sm-0" variant="outline-dark" type="submit">Community Dashboard</b-button>
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
     </div>
     </b-navbar>
+    <b-container>
+      <b-row>
+        <b-col>
+          <div>
+          </div>
+        </b-col>
+        <b-col>
+          <div>
+          </div>
+        </b-col>
+        <b-col>
+          <div>
+          </div>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <div>
+          </div>
+        </b-col>
+        <b-col>
+          <div>
+          </div>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <div>
+          </div>
+        </b-col>
+        <b-col>
+          <div>
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
     </div>
 </template>
 
