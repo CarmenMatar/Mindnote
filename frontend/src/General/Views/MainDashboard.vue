@@ -16,52 +16,37 @@
     </b-collapse>
     </div>
     </b-navbar>
-    <b-container>
-      <b-row>
-        <b-col>
-          <div>
-          </div>
-        </b-col>
-        <b-col>
-          <div>
-          </div>
-        </b-col>
-        <b-col>
-          <div>
-          </div>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          <div>
-          </div>
-        </b-col>
-        <b-col>
-          <div>
-          </div>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          <div>
-          </div>
-        </b-col>
-        <b-col>
-          <div>
-          </div>
-        </b-col>
-      </b-row>
-    </b-container>
+    <div>
+      <RecSystem/>
+      <RecSystem/>
+      <Food/>
+      <Spotify/>
+      <PersonalityDetection/>
+      <EmotionDetection/>
+    </div>
     </div>
 </template>
 
 <script>
+import Spotify from '../components/Spotify.vue'
+import RecSystem from '../components/RecSystem.vue'
+import PersonalityDetection from '../components/PersonalityDetection.vue'
+import EmotionDetection from '../components/EmotionDetection.vue'
+import Food from '../components/Food.vue'
+
 export default {
   name: 'mainDashboard',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    Spotify,
+    RecSystem,
+    PersonalityDetection,
+    EmotionDetection,
+    Food
   }
 }
 </script>
