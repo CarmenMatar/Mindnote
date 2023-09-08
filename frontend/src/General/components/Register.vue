@@ -28,9 +28,7 @@
                     <label class="form-check-label" for="agree">I agree with the <a href="#">Terms & Conditions</a>.</label>
                   </div>
                   <div class="form-group">
-                    <router-link :to="{name: 'MainDashboard'}">
-                    <button class="btn btn-primary" id="register" type="button" name="registerSubmit">Register</button>
-                  </router-link>
+                    <button class="btn btn-primary" id="register" type="button" name="registerSubmit" @click="validateRegister">Register</button>
                   </div>
                 </form>
               </div>
@@ -49,6 +47,12 @@ export default{
   data () {
     return {
       title: 'Register'
+    }
+  },
+  methods: {
+    validateRegister () {
+      console.log('test')
+      this.$router.push('mainDash')
     }
   }
 }

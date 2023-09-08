@@ -22,10 +22,7 @@
                     <input class="form-check-input" type="checkbox" name="remember" id="remember">
                     <label class="form-check-label" for="remember">Remember me</label>
                   </div>
-                  <router-link :to="{name: 'MainDashboard'}">
-                  <button class="btn btn-primary" type="button">Submit</button>
-                </router-link>
-
+                  <button class="btn btn-primary" type="button" @click="validateLogin">Submit</button>
                 </form>
               </div>
             </div>
@@ -43,6 +40,12 @@ export default {
   data () {
     return {
       title: 'Login'
+    }
+  },
+  methods: {
+    validateLogin () {
+      console.log('test')
+      this.$router.push('mainDash')
     }
   }
 }
