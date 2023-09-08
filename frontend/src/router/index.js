@@ -16,17 +16,17 @@ export default new Router({
     },
     {
       path: '/mainDash',
-      name: 'Main Dashboard',
+      name: 'MainDashboard',
       component: MainDashboard
     },
     {
       path: '/communityDash',
-      name: 'Community Dashboard',
+      name: 'CommunityDashboard',
       component: CommunityDashboard
     },
     {
       path: '/adminDash',
-      name: 'Admin Dashboard',
+      name: 'AdminDashboard',
       component: AdminDashboard
     }
   ]

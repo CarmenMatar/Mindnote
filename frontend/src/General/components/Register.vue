@@ -10,7 +10,7 @@
               </div>
               <div class="card-body p-lg-5">
                 <h3 class="mb-4">Get started with Mindnote</h3>
-                <form action="index.html">
+                <form>
                   <div class="form-floating mb-3">
                     <input class="form-control" id="username" type="email" placeholder="name@example.com" required>
                     <label for="username">Username</label>
@@ -28,15 +28,16 @@
                     <label class="form-check-label" for="agree">I agree with the <a href="#">Terms & Conditions</a>.</label>
                   </div>
                   <div class="form-group">
-                    <button class="btn btn-primary" id="regidter" type="button" name="registerSubmit">Register</button>
+                    <router-link :to="{name: 'MainDashboard'}">
+                    <button class="btn btn-primary" id="register" type="button" name="registerSubmit">Register</button>
+                  </router-link>
                   </div>
                 </form>
               </div>
             </div>
           </div>
             <div class="col-lg-6 col-xl-5 ms-xl-auto px-lg-4 text-center text-primary"><img class="img-fluid mb-4" width="300" src="https://therichpost.com/wp-content/uploads/2021/06/login_page_image.png" alt="" style="transform: rotate(10deg)">
-            <h1 class="mb-4">Therichpost.com <br class="d-none d-lg-inline">free code  snippets.</h1>
-            <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <h1 class="mb-4">Mindote <br class="d-none d-lg-inline">Your on demand friend.</h1>
           </div>
           </div>
           </div>

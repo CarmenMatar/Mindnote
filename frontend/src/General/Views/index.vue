@@ -18,7 +18,7 @@
   </b-navbar>
   <div class="container-fluid text-center mt-5">
     <h2>Welcome to Mindnote !</h2><br>
-    <p class="h5">Your personal notebook for your thoughts, and a chance to relate with others on specific ideas.</p>
+    <p class="lead text-muted">Your personal notebook for your thoughts, and a chance to relate with others on specific ideas.</p>
   </div>
   <div>
     <LoginVue v-if="userlogin"></LoginVue>
@@ -34,7 +34,7 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      userlogin: false,
+      userlogin: true,
       userregister: false
     }
   },
