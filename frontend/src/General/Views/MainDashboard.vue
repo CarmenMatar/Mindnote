@@ -20,7 +20,6 @@
       <RecSystem/>
       <RecSystem/>
       <Food/>
-      <Spotify/>
       <PersonalityDetection/>
       <EmotionDetection/>
     </div>
@@ -28,7 +27,6 @@
 </template>
 
 <script>
-import Spotify from '../components/Spotify.vue'
 import RecSystem from '../components/RecSystem.vue'
 import PersonalityDetection from '../components/PersonalityDetection.vue'
 import EmotionDetection from '../components/EmotionDetection.vue'
@@ -42,7 +40,6 @@ export default {
     }
   },
   components: {
-    Spotify,
     RecSystem,
     PersonalityDetection,
     EmotionDetection,
